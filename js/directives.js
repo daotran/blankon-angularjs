@@ -308,7 +308,7 @@ angular.module('blankonDirective', [])
                                 label: 'Yes',
                                 className: 'btn-success',
                                 callback: function() {
-                                    window.location = settings.baseURL+'/production/admin/angularjs/account.html#/lock-screen';
+                                    window.location = settings.baseURL+'/account.html#/lock-screen';
                                 }
                             }
                         }

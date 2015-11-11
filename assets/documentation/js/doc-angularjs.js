@@ -36,7 +36,8 @@ var BlankonDocumentation = function () {
     // SETTINGS APP
     // =========================================================================
     var globalPluginsPath   = '../../../assets/global/plugins/bower_components',
-        targetListPath      = '../../../production/admin/angularjs/#',
+        //targetListPath      = '../../../production/admin/angularjs/#',
+        targetListPath      = '../../../#',
         targetListPathLivePreview      = '../../../live-preview/admin/angularjs/#';
 
     return {

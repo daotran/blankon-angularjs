@@ -58,7 +58,7 @@
                             btn.removeAttr('disabled');
                             setTimeout(function () {
                                 form.submit();
-                                window.location = settings.baseURL+'/production/admin/angularjs/#/dashboard';
+                                window.location = settings.baseURL+'/#/dashboard';
                             }, 2500);
                         }
                     }
