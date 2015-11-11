@@ -132,7 +132,7 @@ body.page-boxed #sign-wrapper form {
   color: white;
 }
 .sign-body {
-  background-color: rgba(234, 234, 236, 0.72);
+  background-color: #rgba(234, 234, 236, 0.72);
   margin: 0px;
   padding: 15px 0px;
 }

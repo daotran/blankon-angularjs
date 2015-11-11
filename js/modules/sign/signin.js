@@ -6,7 +6,7 @@
             // =========================================================================
             // FORM VALIDATION
             // =========================================================================
-            // Just demo form validation on desktop view width screen large then 1024px, not available on tablet and mobile view.
+            // Just demo form validation on desktop view width screen large than 1024px, not available on tablet and mobile view.
             if($('.sign-in').length && $(window).width() >= 1024){
 
                 $('.sign-in').validate(
@@ -32,7 +32,7 @@
                         },
                         messages: {
                             username: {
-                                required: "Just fill anything mr awesome"
+                                required: "Please provide a username or email"
                             },
                             password: {
                                 required: "Please provide a password"
@@ -53,12 +53,12 @@
                             }
                             btn.attr('disabled', 'disabled');
                             setTimeout(function() {
-                                btn.text('Great MR AWESOME !');
+                                btn.text('Welcome MR AWESOME !');
                             }, 2000);
                             btn.removeAttr('disabled');
                             setTimeout(function () {
                                 form.submit();
-                                window.location = settings.baseURL+'/#/dashboard';
+                                window.location = settings.baseURL+'/index.html#/dashboard';
                             }, 2500);
                         }
                     }

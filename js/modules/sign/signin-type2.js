@@ -32,7 +32,7 @@
                         },
                         messages: {
                             username: {
-                                required: "Just fill anything mr awesome"
+                                required: "Please provide a username or email"
                             },
                             password: {
                                 required: "Please provide a password"
@@ -53,12 +53,12 @@
                             }
                             btn.attr('disabled', 'disabled');
                             setTimeout(function() {
-                                btn.text('Great MR AWESOME !');
+                                btn.text('Welcome MR AWESOME !');
                             }, 2000);
                             btn.removeAttr('disabled');
                             setTimeout(function () {
                                 form.submit();
-                                window.location = settings.baseURL+'/#/dashboard';
+                                window.location = settings.baseURL+'/index.html#/dashboard';
                             }, 2500);
                         }
                     }
@@ -89,8 +89,8 @@
             // Duration is the amount of time in between slides,
             // and fade is value that determines how quickly the next image will fade in
             $.backstretch([
-                'http://localhost/blankon-fullpack-admin-theme/1.0.6/assets/admin/img/bg/1.jpg',
-                'http://localhost/blankon-fullpack-admin-theme/1.0.6/assets/admin/img/bg/2.jpg'
+                'http://localhost/blankon-angularjs/img/bg/1.jpeg',
+                'http://localhost/blankon-angularjs/img/bg/2.jpeg'
             ], {duration: 5000, fade: 750});
 
         })

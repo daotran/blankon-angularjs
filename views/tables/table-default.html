@@ -19,7 +19,7 @@
                     <tr data-ng-repeat="table in tables.sampleTable">
                         <td class="text-center border-right">{{$index + 1}}</td>
                         <td>
-                            <img src="http://img.djavaui.com/?create=35x35,4888E1?f=ffffff" class="img-circle img-bordered-theme" alt="{{table.name}}">
+                            <img src="{{settings.globalImagePath}}/avatar/{{$index + 1}}.png" class="img-circle img-bordered-theme" alt="{{table.name}}">
                             <span>{{table.name}}</span>
                         </td>
                         <td>{{table.location}}</td>

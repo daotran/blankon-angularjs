@@ -255,11 +255,11 @@ angular.module('blankonConfig', [])
                                 {
                                     name: 'blankonApp.dashboard',
                                     files: [
-                                        pluginPath+'/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js',
-                                        pluginPath+'/flot/jquery.flot.pack.js',
-                                        pluginPath+'/dropzone/downloads/dropzone.min.js',
-                                        pluginPath+'/jquery.gritter/js/jquery.gritter.min.js',
-                                        pluginPath+'/skycons-html5/skycons.js',
+                                        pluginPath+'/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js', // for timeout
+                                        pluginPath+'/flot/jquery.flot.pack.js',                 // for charts and server status
+                                        pluginPath+'/dropzone/downloads/dropzone.min.js',       // for upload files
+                                        pluginPath+'/jquery.gritter/js/jquery.gritter.min.js',  // for notifications
+                                        pluginPath+'/skycons-html5/skycons.js',                 // for showing icons
                                         'js/modules/dashboard.js'
                                     ]
                                 }
@@ -735,6 +735,25 @@ angular.module('blankonConfig', [])
                     },
                     breadcrumbs: [
                         {title: 'Pages'},{title: 'Profile'}
+                    ]
+                }
+            })
+
+            // =========================================================================
+            // PAGE BLOG SINGLE
+            // =========================================================================
+            .state('pageBlogSingle', {
+                url: '/page-blog-single',
+                templateUrl: 'views/pages/page-blog-single.html',
+                data: {
+                    pageTitle: 'PAGE BLOG SINGLE',
+                    pageHeader: {
+                        icon: 'fa fa-male',
+                        title: 'Page Blog Single',
+                        subtitle: 'page blog single sample'
+                    },
+                    breadcrumbs: [
+                        {title: 'Pages'},{title: 'Page Blog Single'}
                     ]
                 }
             })

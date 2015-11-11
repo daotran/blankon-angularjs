@@ -146,20 +146,20 @@
                 <!-- Start weather widget -->
                 <div class="widget-wrapper bg-theme rounded">
                     <div class="weather-current-city">
-                        <img src="http://img.djavaui.com/?create=250x125,A90329" alt="..."/>
+                        <img src="{{settings.globalImagePath}}/bg/weather-background-earth.jpg" alt="Weather Background Earth"/>
                         <div class="row">
                             <div class="col-md-8 col-sm-8 col-xs-8">
-                                                                <span class="current-city">
-                                                                    Yogyakarta, ID
-                                                                </span>
-                                                                <span class="current-temp">
-                                                                    27&deg;C
-                                                                </span>
+                                <span class="current-city">
+                                    Yogyakarta, ID
+                                </span>
+                                <span class="current-temp">
+                                    27&deg;C
+                                </span>
                             </div><!-- /.col-md-7 -->
                             <div class="col-md-4 col-sm-4 col-xs-4">
-                                                                <span class="current-day-icon">
-                                                                  <canvas id="partly-cloudy-day" width="60" height="60"></canvas>
-                                                                </span>
+                                <span class="current-day-icon">
+                                  <canvas id="partly-cloudy-day" width="60" height="60"></canvas>
+                                </span>
                             </div><!-- /.col-md-5 -->
                         </div><!-- /.row -->
                         <span class="current-day"> Monday, 8 December </span>
@@ -192,7 +192,7 @@
                 <!-- Start blog post widget -->
                 <div class="blog-item blog-quote rounded shadow">
                     <div class="quote quote-lilac">
-                        <a href="page-blog-single.html">
+                        <a href="#/page-blog-single">
                             Stay Hungry, Stay Foolish
                             <small class="quote-author">- Steve Jobs -</small>
                         </a>
@@ -232,7 +232,7 @@
             <tr data-ng-repeat="table in tables">
                 <td class="text-center border-right">{{$index + 1}}</td>
                 <td>
-                    <img src="http://img.djavaui.com/?create=250x170,4888E1?f=ffffff" class="img-circle img-bordered-theme" alt="{{table.name}}">
+                    <img ng-src="{{settings.globalImagePath}}/avatar/{{$index + 1}}.png" class="img-circle img-bordered-theme" alt="{{table.name}}">
                     <span>{{table.name}}</span>
                 </td>
                 <td>{{table.location}}</td>
