@@ -283,7 +283,7 @@ angular.module('blankonConfig', [])
                         subtitle: 'blog grid type and post samples'
                     },
                     breadcrumbs: [
-                        {title: 'Pages'},{title: 'Blog Grid'}
+                        {title: 'Pages'}, {title: 'Blog Grid'}
                     ]
                 },
                 controller: 'BlogCtrl',
@@ -361,8 +361,6 @@ angular.module('blankonConfig', [])
                                 {
                                     name: 'blankonApp.blog.single',
                                     files: [
-                                        pluginPath+'/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.min.js',
-                                        pluginPath+'/bootstrap-wysihtml5/src/bootstrap-wysihtml5.js',
                                         'js/modules/blog/single.js'
                                     ]
                                 }
@@ -1725,7 +1723,6 @@ angular.module('blankonConfig', [])
                                     name: 'gridshore.c3js.chart',
                                     files: [
                                         pluginPath+'/d3/d3.min.js',
-                                        pluginPath+'/c3/c3.min.js',
                                         pluginPath+'/c3-angular/c3js-directive.js'
                                     ]
                                 },

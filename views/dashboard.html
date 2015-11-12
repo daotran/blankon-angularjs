@@ -146,7 +146,7 @@
                 <!-- Start weather widget -->
                 <div class="widget-wrapper bg-theme rounded">
                     <div class="weather-current-city">
-                        <img src="{{settings.globalImagePath}}/bg/weather-background-earth.jpg" alt="Weather Background Earth"/>
+                        <img ng-src="{{settings.globalImagePath}}/bg/weather-background-earth.jpg" alt="Weather Background Earth"/>
                         <div class="row">
                             <div class="col-md-8 col-sm-8 col-xs-8">
                                 <span class="current-city">
@@ -232,7 +232,7 @@
             <tr data-ng-repeat="table in tables">
                 <td class="text-center border-right">{{$index + 1}}</td>
                 <td>
-                    <img ng-src="{{settings.globalImagePath}}/avatar/{{$index + 1}}.png" class="img-circle img-bordered-theme" alt="{{table.name}}">
+                    <img ng-src="{{settings.globalImagePath}}/avatar/35/{{$index + 1}}.png" class="img-circle img-bordered-theme" alt="{{table.name}}">
                     <span>{{table.name}}</span>
                 </td>
                 <td>{{table.location}}</td>

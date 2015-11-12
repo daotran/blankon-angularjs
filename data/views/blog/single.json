@@ -27,7 +27,7 @@
       "Nature", "Entertainment", "Technology", "Food & Health", "Movies & TV Shows"
     ],
 
-      "tags": [
+    "tags": [
           "People", "Nature", "Phone", "Internet", "Photos", "Business"
       ],
 
@@ -65,7 +65,7 @@
       }
     ],
 
-      "recentTwitts": [
+    "recentTwitts": [
           {
               "username": "@djavaui",
               "urlUsername": "https://twitter.com/djavaui",
